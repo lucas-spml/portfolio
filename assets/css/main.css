@@ -4616,14 +4616,14 @@ only screen and (min-width: 1400px) {
 
 .portfolio-item-wrapper {
   position: relative;
-  border-radius: 2px;
+  border-radius: 8px;
   overflow: hidden;
   margin-bottom: 30px;
 }
 
 .portfolio-item-wrapper:hover .portfolio-img img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  /* -webkit-transform: scale(1.1);
+          transform: scale(1.1); */
 }
 
 .portfolio-item-wrapper .portfolio-img img {
