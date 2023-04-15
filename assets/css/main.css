@@ -1961,7 +1961,7 @@ blockquote span {
 @media only screen and (min-width: 768px) and (max-width: 991px),
 (max-width: 767px) {
   .portfolio .grid {
-    margin-top: 32px;
+    margin-top: 0px;
   }
 }
 
