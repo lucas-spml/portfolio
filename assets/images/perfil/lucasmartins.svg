@@ -1,6 +1,6 @@
 <svg width="171" height="171" viewBox="0 0 171 171" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M85.5 0C38.2795 0 0 38.2797 0 85.5C0 132.72 38.2795 171 85.5 171C101.583 171 116.629 166.559 129.478 158.837C126.072 155.033 124 150.008 124 144.5C124 132.626 133.626 123 145.5 123C150.879 123 155.797 124.975 159.567 128.24C166.838 115.667 171 101.069 171 85.5C171 38.2797 132.72 0 85.5 0Z" fill="url(#pattern0)"/>
-<circle cx="145.5" cy="144.5" r="15.5" fill="#06F73B"/>
+<circle cx="145.5" cy="144.5" r="15.5" fill="#06F182"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_1852_16465" transform="scale(0.0015015)"/>
