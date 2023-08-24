@@ -1,12 +1,3 @@
-function showLoader() {
-    document.querySelector('.preloader').style.opacity = '1000';
-    document.querySelector('.preloader').style.display = 'block';
-}
-
-function hideLoader() {
-    document.querySelector('.preloader').style.opacity = '0';
-    document.querySelector('.preloader').style.display = 'none';
-}
 
 function changeFilter(filterNumber) {
     var elements = [];
@@ -23,16 +14,16 @@ function changeFilter(filterNumber) {
             break;
 
         case 2:
-            newElement = document.getElementById('portfolio-ecommerce');
+            newElement = document.getElementById('portfolio-protótipos');
             break;
 
         case 3:
-            newElement = document.getElementById('portfolio-apps');
-            break;
-
-        case 4:
             newElement = document.getElementById('portfolio-design');
             break;
+
+        // case 4:
+        //     newElement = document.getElementById('portfolio-design');
+        //     break;
 
         default:
             break;
@@ -63,6 +54,18 @@ function changeFilter(filterNumber) {
         oldElement.classList.remove('active');
     }
 }
+
+
+function showLoader() {
+    document.querySelector('.preloader').style.opacity = '1000';
+    document.querySelector('.preloader').style.display = 'block';
+}
+
+function hideLoader() {
+    document.querySelector('.preloader').style.opacity = '0';
+    document.querySelector('.preloader').style.display = 'none';
+}
+
 
 async function sendEmail() {
     var formData = {};
