@@ -26,6 +26,7 @@
 <body>
 
   <!-- Start Hero Area -->
+
   <section class="header-ten hero-area">
     <div class="container">
       <div class="row  justify-content-center text-center">
@@ -34,7 +35,6 @@
             <div class="wow fadeInLeft pb-20 col-lg-2 col-md-2 col-3" data-wow-delay=".1s">
               <img src="./assets/images/perfil/lucasmartins.webp" alt="">
             </div>
-            <!-- <h2 class="wow fadeInLeft" data-wow-delay=".1s">Lucas Martins</h2>  -->
             <h1 class="wow fadeInLeft" data-wow-delay=".1s">Lucas Martins</h1>
             <h3 class="wow fadeInLeft" data-wow-delay=".1s">Product Designer</h3>
             <p class="wow fadeInLeft pt-10" data-wow-delay=".1s">Olá, eu sou o Lucas! Além do design, sou entusiasta de
@@ -57,17 +57,8 @@
       </div>
     </div>
   </section>
+
   <!-- End Hero Area -->
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -97,14 +88,15 @@
                     <li>Ryzen 5 3600x</li>
                     <li>RTX 2060 EVGA</li>
                     <li>32GB RAM Corsair Vengeance</li>
-                    <!-- etc -->
                   </ul>
                 </div>
                 <div class="tab-pane fade" id="gadgets" role="tabpanel">
-                  <li>MacBook Air M1 2020 13.3" 16GB</li>
-                  <li>Iphone 12</li>
-                  <li>Meta Quest 3</li>
-                  <li>Kindle 10a.</li>
+                  <ul class="setup-list">
+                    <li>MacBook Air M1 2020 13.3" 16GB</li>
+                    <li>Iphone 12</li>
+                    <li>Meta Quest 3</li>
+                    <li>Kindle 10a.</li>
+                  </ul>
                 </div>
 
               </div>
@@ -116,12 +108,6 @@
   </section>
 
   <!-- End Content Area -->
-
-
-
-
-
-
 
 
 
@@ -143,15 +129,59 @@
               <img src="assets/images/apps/notion.png" alt="App 2" class="app-icon">
               <img src="assets/images/apps/vscode.png" alt="App 4" class="app-icon">
               <img src="assets/images/apps/gpt.png" alt="App 5" class="app-icon">
-
-              <!-- etc -->
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- End Apps Area -->
+
+
+
+
+
+
+
+
+  <!-- Start Playlist Area -->
+
+  <section class="wow fadeInLeft playlist-section" data-wow-delay=".2s">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="card-section mb-4">
+            <div class="d-flex align-items-center mb-4">
+              <i class="lni lni-music me-2 fs-4"></i>
+              <h5 class="mb-0">Playlists</h5>
+            </div>
+
+            <!-- Playlist 1 -->
+            <iframe style="border-radius:12px; margin-bottom: 16px;"
+              src="https://open.spotify.com/embed/playlist/5ZVy50T3UGoRa29mgCxpBT?utm_source=generator" width="100%"
+              height="152" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+
+            <!-- Playlist 2 -->
+            <iframe style="border-radius:12px;"
+              src="https://open.spotify.com/embed/playlist/6hwwK8OefDVvF6uRBysJyV?utm_source=generator" width="100%"
+              height="152" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Playlist Area -->
+
+
 
 
 
@@ -217,48 +247,7 @@
       nav: false,
       controlsText: ['<i class="lni lni-arrow-left"></i>', '<i class="lni lni-arrow-right"></i>'],
     });
-
-    //============== isotope masonry js with imagesloaded
-    //   const filters = document.querySelectorAll(".portfolio-menu button");
-
-    //   filters.forEach((filter) => {
-    //     filter.addEventListener("click", function () {
-    //       // ==== Filter btn toggle
-    //       let filterBtn = filters[0];
-    //       while (filterBtn) {
-    //         if (filterBtn.tagName === "BUTTON") {
-    //           filterBtn.classList.remove("active");
-    //         }
-    //         filterBtn = filterBtn.nextSibling;
-    //       }
-    //       this.classList.add("active");
-
-    //       // === filter
-    //       let selectedFilter = filter.getAttribute("data-filter");
-    //       let itemsToHide = document.querySelectorAll(
-    //         `.grid .col-lg-4:not([data-filter='${selectedFilter}'])`
-    //       );
-    //       let itemsToShow = document.querySelectorAll(
-    //         `.grid [data-filter='${selectedFilter}']`
-    //       );
-
-    //       if (selectedFilter == "all") {
-    //         itemsToHide = [];
-    //         itemsToShow = document.querySelectorAll(".grid [data-filter]");
-    //       }
-
-    //       itemsToHide.forEach((el) => {
-    //         el.classList.add("hide");
-    //         el.classList.remove("show");
-    //       });
-
-    //       itemsToShow.forEach((el) => {
-    //         el.classList.remove("hide");
-    //         el.classList.add("show");
-    //       });
-    //     });
-    //   });
-    // </script>
+  </script>
 
 
   <script>
@@ -304,7 +293,7 @@
 
     //========= glightbox
     GLightbox({
-      'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
+      'href': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       'type': 'video',
       'source': 'youtube', //vimeo, youtube or local
       'width': 900,

@@ -128,6 +128,7 @@ h3 {
   color: #E6E6E6;
   font-family: "DM Sans", sans-serif;
 }
+
 h4,
 h5,
 h6 {
@@ -1155,10 +1156,14 @@ ol {
   border-color: var(--primary);
   color: var(--primary);
 }
-.blog-style-four .blog-content .rounded-buttons .active.primary-btn-outline, .blog-style-four .blog-content .rounded-buttons .primary-btn-outline:hover, .blog-style-four .blog-content .rounded-buttons .primary-btn-outline:focus {
+
+.blog-style-four .blog-content .rounded-buttons .active.primary-btn-outline,
+.blog-style-four .blog-content .rounded-buttons .primary-btn-outline:hover,
+.blog-style-four .blog-content .rounded-buttons .primary-btn-outline:focus {
   background: #121212;
   color: var(--white);
 }
+
 .blog-style-four .blog-content .rounded-buttons .deactive.primary-btn-outline {
   color: var(--dark-3);
   border-color: var(--gray-4);
@@ -1173,21 +1178,25 @@ ol {
   box-shadow: 0px 4px 20px rgba(49, 49, 49, 0.1);
   border-radius: 8px;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog-style-four {
     padding: 20px;
   }
 }
+
 @media (max-width: 767px) {
   .blog-style-four {
     padding: 15px;
   }
 }
+
 .blog-style-four .blog-image {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
 }
+
 .blog-style-four .blog-image::before {
   position: absolute;
   content: "";
@@ -1197,15 +1206,18 @@ ol {
   width: 100%;
   background: linear-gradient(transparent, var(--dark-1));
 }
+
 .blog-style-four .blog-image img {
   width: 100%;
 }
+
 .blog-style-four .blog-image .meta-info {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 20px;
 }
+
 .blog-style-four .blog-image .meta-info span {
   font-size: 14px;
   line-height: 20px;
@@ -1214,12 +1226,15 @@ ol {
   margin-right: 8px;
   display: inline-block;
 }
+
 .blog-style-four .blog-content {
   padding-top: 25px;
 }
+
 .blog-style-four .blog-content .blog-title {
   margin-bottom: 12px;
 }
+
 .blog-style-four .blog-content .blog-title a {
   font-weight: 600;
   line-height: 30px;
@@ -1230,13 +1245,16 @@ ol {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+
 .blog-style-four .blog-content .blog-title a:hover {
   color: var(--primary);
 }
+
 .blog-style-four .blog-content .text {
   color: var(--dark-3);
   margin-top: 16px;
 }
+
 .blog-style-four .blog-content .rounded-buttons {
   margin-top: 30px;
 }
@@ -1259,357 +1277,6 @@ ol {
 
 
 
-/*======================================
-	00. content 
-========================================*/
-
-
-.content-section{
-  background-color: #121212;
-  padding-top: 30px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .content-section {
-    padding-top: 35px;
-    
-  }
-}
-
-@media (max-width: 767px) {
-  .content-section{
-    padding-top: 8px;
-    
-  }
-}
-
-
-
-.custom-tabs .nav-link.active {
-  background-color: transparent !important;
-}
-
-
-
-.blog-grids.pagination {
-  margin-top: 50px;
-  text-align: center;
-}
-
-.button .btn {
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 14px 30px;
-  background-color: #06F73B;
-  color: #fff;
-  border: none;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  border-radius: 30px;
-  position: relative;
-  z-index: 1;
-  margin-right: 7px;
-  overflow: hidden;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .button .btn {
-    padding: 14px 25px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-}
-
-@media (max-width: 767px) {
-  .button .btn {
-    padding: 14px 25px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-}
-
-.button .btn i {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.button .btn:last-child {
-  margin: 0;
-}
-
-.button .btn:hover {
-  color: #fff;
-  background-color: #081828;
-}
-
-.button {
-  margin-left: 0 !important;
-}
-
-.button .btn-alt {
-  background-color: #081828 !important;
-  color: #fff !important;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .button .btn-alt {
-    padding: 14px 25px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-}
-
-@media (max-width: 767px) {
-  .button .btn-alt {
-    padding: 14px 25px;
-    font-size: 14px;
-    font-weight: 500;
-  }
-}
-
-.button .btn-alt:hover {
-  background-color: #06F73B !important;
-  color: #fff !important;
-}
-
-.align-left {
-  text-align: left;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.align-center {
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*======================================
-	00. portfolio 
-========================================*/
-
-
-.portfolio-section{
-  background-color: #121212;
-  padding-top: 0px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .portfolio-section {
-    padding-top: 35px;
-    
-  }
-}
-
-@media (max-width: 767px) {
-  .portfolio-section{
-    padding-top: 8px;
-    
-  }
-}
-
-.portfolio-section .portfolio-btn-wrapper {
-  margin-bottom: 50px;
-}
-
-@media (max-width: 416px) {
-  .portfolio-section .portfolio-btn-wrapper{
-    margin-bottom: 24px;
-    
-  }
-}
-
-/* 
-
-.hero-area .hero-content h2 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 36px;
-  color: #06F182;
-  opacity: 1;
-  background-color: #214b36;
-  background-clip: text;
-  border-radius: 64px;
-  text-align: center;
-  max-width: 150px;
-} */
-
-
-
-.portfolio-section .portfolio-btn-wrapper button {
-  padding: 4px 24px;
-  line-height: 36px;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  background: #4e4e4e;
-  color: #a3a3a3;
-  border-radius: 64px;
-  margin-right: 16px;
-  margin-bottom: 16px;
-  transition: all 0.3s ease-out 0s;
-}
-
-.portfolio-section .portfolio-btn-wrapper button.active {
-  /* background-image: linear-gradient(to right, #214b36 0%, #06F182 100%); */
-  background: #214b36;
-  
-  color: #06F182;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .portfolio-section .portfolio-btn-wrapper button {
-    margin-right: 10px;
-    padding: 4px 18px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 767px) {
-  .portfolio-section .portfolio-btn-wrapper button {
-    margin-right: 10px;
-    padding: 4px 18px;
-    font-size: 16px;
-  }
-}
-
-.portfolio-section .portfolio-btn-wrapper button:last-child {
-  margin-right: 0;
-}
-
-.portfolio-item-wrapper {
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-.portfolio-item-wrapper:hover .portfolio-overlay {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-}
-
-.portfolio-item-wrapper .portfolio-img img {
-  width: 100%;
-}
-
-.portfolio-item-wrapper .portfolio-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-  background: linear-gradient(rgba(63, 63, 63, 0.89) 0%, rgba(66, 66, 66, 0.89) 100%);
-  padding: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-out 0s;
-  transform: scale(1);
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .portfolio-item-wrapper .portfolio-overlay {
-    padding: 30px 20px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .portfolio-item-wrapper .portfolio-overlay {
-    padding: 30px 20px;
-  }
-}
-
-.portfolio-item-wrapper .portfolio-overlay .overlay-content h3 {
-  color: #fff;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
-
-.portfolio-item-wrapper .portfolio-overlay .overlay-content p {
-  color: #fff;
-  margin-bottom: 35px;
-}
-
-.portfolio-item-wrapper .portfolio-overlay .overlay-content .border-btn {
-  border-radius: 64px;
-  padding: 8px 28px;
-  color: #fff;
-  border: 2px solid #fff;
-}
-
-.portfolio-item-wrapper .portfolio-overlay .overlay-content .border-btn:hover {
-  color: #313131;
-  background: #fff;
-}
-
-.single-portfolio .single-portfolio-img {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.single-portfolio .single-portfolio-img img {
-  width: 100%;
-}
-
-.project-info-box ul li {
-  margin-bottom: 15px;
-  display: flex;
-  font-size: 14px;
-}
-
-.project-info-box ul li:last-child {
-  margin-bottom: 0;
-}
-
-.project-info-box ul li .destination {
-  width: 40%;
-  color: #051441;
-  text-transform: uppercase;
-}
 
 /*======================================
 	00. Scroll bar
@@ -2082,21 +1749,7 @@ ol {
   color: #06F182;
   font-size: 18px;
   max-width: 172px;
-  
 
-
-
-
-  /* font-weight: 600;
-  font-size: 18px;
-  line-height: 36px;
-  color: #06F182;
-  opacity: 1;
-  background-color: #214b36;
-  background-clip: text;
-  border-radius: 64px;
-  text-align: center;
-  max-width: 150px; */
 }
 
 .hero-area .hero-content h1 {
@@ -2280,37 +1933,135 @@ blockquote span {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*======================================
-   03. Content CSS
+	00. content 
 ========================================*/
+
+
+.content-section {
+  background-color: #121212;
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .content-section {
+    padding-top: 35px;
+
+  }
+}
+
+@media (max-width: 767px) {
+  .content-section {
+    padding-top: 8px;
+
+  }
+}
+
+
+
+.custom-tabs .nav-link.active {
+  background-color: transparent !important;
+}
+
+
+
+.blog-grids.pagination {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.button .btn {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 30px;
+  background-color: #06F73B;
+  color: #fff;
+  border: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  margin-right: 7px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .button .btn {
+    padding: 14px 25px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .button .btn {
+    padding: 14px 25px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.button .btn i {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.button .btn:last-child {
+  margin: 0;
+}
+
+.button .btn:hover {
+  color: #fff;
+  background-color: #081828;
+}
+
+.button {
+  margin-left: 0 !important;
+}
+
+.button .btn-alt {
+  background-color: #081828 !important;
+  color: #fff !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .button .btn-alt {
+    padding: 14px 25px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .button .btn-alt {
+    padding: 14px 25px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.button .btn-alt:hover {
+  background-color: #06F73B !important;
+  color: #fff !important;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+
+
 .card-section {
   background: #1c1c1c;
   border-radius: 20px;
@@ -2340,43 +2091,27 @@ blockquote span {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*======================================
    03. Apps CSS
 ========================================*/
 
-.app-section{
+.app-section {
   background-color: #121212;
   padding-top: 10px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .app-section {
     padding-top: 35px;
-    
+
   }
 }
 
 @media (max-width: 767px) {
-  .app-section{
+  .app-section {
     padding-top: 8px;
-    
+
   }
 }
 
@@ -2401,24 +2136,18 @@ blockquote span {
 
 
 
+/*======================================
+   03. Playlist CSS
+========================================*/
 
+.playlist-section {
+  background-color: #121212;
+  padding: 0px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.playlist-embed {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 
 
