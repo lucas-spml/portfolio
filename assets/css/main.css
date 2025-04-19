@@ -16,11 +16,12 @@ Index Of css
 
 html {
   scroll-behavior: smooth;
-  background-color: #151515;
+  background-color: #121212;
 }
 
 body {
   font-family: "DM Sans", sans-serif;
+  background-color: #121212;
   font-weight: normal;
   font-style: normal;
   color: #a3a3a3;
@@ -122,7 +123,11 @@ h1 {
 }
 
 h2,
-h3,
+h3 {
+  font-weight: 500;
+  color: #E6E6E6;
+  font-family: "DM Sans", sans-serif;
+}
 h4,
 h5,
 h6 {
@@ -149,7 +154,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h4 {
@@ -1151,7 +1156,7 @@ ol {
   color: var(--primary);
 }
 .blog-style-four .blog-content .rounded-buttons .active.primary-btn-outline, .blog-style-four .blog-content .rounded-buttons .primary-btn-outline:hover, .blog-style-four .blog-content .rounded-buttons .primary-btn-outline:focus {
-  background: #151515;
+  background: #121212;
   color: var(--white);
 }
 .blog-style-four .blog-content .rounded-buttons .deactive.primary-btn-outline {
@@ -1254,10 +1259,35 @@ ol {
 
 
 
+/*======================================
+	00. content 
+========================================*/
+
+
+.content-section{
+  background-color: #121212;
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .content-section {
+    padding-top: 35px;
+    
+  }
+}
+
+@media (max-width: 767px) {
+  .content-section{
+    padding-top: 8px;
+    
+  }
+}
 
 
 
-
+.custom-tabs .nav-link.active {
+  background-color: transparent !important;
+}
 
 
 
@@ -1360,13 +1390,43 @@ ol {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======================================
 	00. portfolio 
 ========================================*/
 
 
 .portfolio-section{
-  background-color: #151515;
+  background-color: #121212;
   padding-top: 0px;
 }
 
@@ -1832,7 +1892,7 @@ ol {
 }
 
 .header.sticky {
-  background-color: #151515;
+  background-color: #121212;
 }
 
 .header.sticky .button .btn {
@@ -1978,7 +2038,7 @@ ol {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
-  background-color: #151515;
+  background-color: #121212;
   z-index: 0;
 }
 
@@ -2041,8 +2101,8 @@ ol {
 
 .hero-area .hero-content h1 {
   font-weight: 700;
-  margin-top: 20px;
-  font-size: 38px;
+  margin-top: 0px;
+  font-size: 32px;
   line-height: 55px;
   color: #E6E6E6;
   text-transform: capitalize;
@@ -2087,7 +2147,7 @@ ol {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-area .hero-content h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 
@@ -2114,7 +2174,7 @@ ol {
   }
 
   .hero-area .hero-content h1 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 32px;
   }
 
@@ -2216,11 +2276,171 @@ blockquote span {
   color: #fff;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================
+   03. Content CSS
+========================================*/
+.card-section {
+  background: #1c1c1c;
+  border-radius: 20px;
+  padding: 30px;
+  color: #f1f1f1;
+}
+
+.custom-tabs .nav-link {
+  color: #888;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.custom-tabs .nav-link.active {
+  color: #fff;
+  border-bottom: 2px solid #0caa60;
+}
+
+.setup-list {
+  padding-left: 16px;
+  list-style-type: disc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================
+   03. Apps CSS
+========================================*/
+
+.app-section{
+  background-color: #121212;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .app-section {
+    padding-top: 35px;
+    
+  }
+}
+
+@media (max-width: 767px) {
+  .app-section{
+    padding-top: 8px;
+    
+  }
+}
+
+
+
+.app-icons {
+  margin-top: 10px;
+}
+
+.app-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.app-icon:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======================================
    03. Portfolio CSS
 ========================================*/
 .portfolio {
-  background-color: #151515;
+  background-color: #121212;
   padding: 8px 0px;
 }
 
@@ -2350,7 +2570,7 @@ blockquote span {
   content: "";
   right: 0;
   top: 0;
-  background-color: #151515;
+  background-color: #121212;
   height: 100%;
   width: 100%;
   z-index: 5;
@@ -2439,7 +2659,7 @@ blockquote span {
 	04. Footer CSS
 ========================================*/
 .footer {
-  background-color: #151515;
+  background-color: #121212;
   position: relative;
   padding-bottom: 0;
 }
@@ -2739,8 +2959,8 @@ only screen and (min-width: 1400px) {
 }
 
 .footer-social-links ul li a:hover {
-  background: linear-gradient(#214B36 0%, #214B36 100%);
-  color: #06F182;
+  background: linear-gradient(#2e3133 0%, #2e3133 100%);
+  color: #a5a2a2;
 }
 
 /*======================================
