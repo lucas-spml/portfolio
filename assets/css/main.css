@@ -2143,6 +2143,7 @@ blockquote span {
 .playlist-section {
   background-color: #121212;
   padding: 0px 0;
+  padding-bottom: 50px;
 }
 
 .playlist-embed {
