@@ -236,61 +236,61 @@
 
 
   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    // 1) Defina aqui todas as suas traduções
-    const translations = {
-      en: {
-        "hero.name":        "Lucas Martins",
-        "hero.role":        "Product Designer",
-        "hero.intro":       "Hi, I'm Lucas! Besides design, I'm passionate about volleyball, TV shows, movies and travel, experiences that shape the way I see life. I work as a Product Designer at Monuv, focusing on product discovery, UI design, and UX design. ☕",
-        "apps.heading":     "Skills",
-        "playlists.heading":"Playlists",
-        "tabs.setup":       "Setup",
-        "tabs.gadgets":     "Gadgets"
-        // … outras chaves
-      },
-      pt: {
-        "hero.name":        "Lucas Martins",
-        "hero.role":        "Product Designer",
-        "hero.intro":       "Olá, eu sou o Lucas! Além do design, sou entusiasta de vôlei, séries, filmes e viagens. Atuo como Product Designer na Monuv, com foco em product discovery, UI design e UX design. ☕",
-        "apps.heading":     "Habilidades",
-        "playlists.heading":"Playlists",
-        "tabs.setup":       "Setup",
-        "tabs.gadgets":     "Gadgets"
-        // … traduções
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1) Defina aqui todas as suas traduções
+      const translations = {
+        en: {
+          "hero.name": "Lucas Martins",
+          "hero.role": "Product Designer",
+          "hero.intro": "Hi, I'm Lucas! Besides design, I'm passionate about volleyball, TV shows, movies, and traveling, experiences that shape the way I see life. I work as a Product Designer at Monuv, focusing on product discovery, UI design, and UX design. ☕",
+          "apps.heading": "Skills",
+          "playlists.heading": "Playlists",
+          "tabs.setup": "Setup",
+          "tabs.gadgets": "Gadgets"
+          // … outras chaves
+        },
+        pt: {
+          "hero.name": "Lucas Martins",
+          "hero.role": "Product Designer",
+          "hero.intro": "Olá, eu sou o Lucas! Além do design, sou entusiasta de vôlei, séries, filmes e viagens, experiências que influenciam minha forma de ver a vida. Atuo como Product Designer na Monuv com foco nas etapas de product discovery, UI design e UX design. ☕",
+          "apps.heading": "Habilidades",
+          "playlists.heading": "Playlists",
+          "tabs.setup": "Setup",
+          "tabs.gadgets": "Gadgets"
+          // … traduções
+        }
+      };
+
+      // 2) Pega do localStorage ou assume 'en' (inglês) como padrão
+      let currentLang = localStorage.getItem("site-lang") || "en";
+
+      // 3) Seleciona o toggle (bandeira)
+      const toggle = document.getElementById("lang-toggle");
+
+      // 4) Função que faz a troca
+      function translatePage(lang) {
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          const txt = translations[lang][key];
+          if (txt) el.innerText = txt;
+        });
+        // atualiza a imagem da bandeira
+        toggle.src = lang === "en"
+          ? "assets/images/flags/eua.png"
+          : "assets/images/flags/br.png";
+        localStorage.setItem("site-lang", lang);
+        currentLang = lang;
       }
-    };
 
-    // 2) Pega do localStorage ou assume 'en' (inglês) como padrão
-    let currentLang = localStorage.getItem("site-lang") || "en";
+      // 5) Aplica a tradução logo na carga
+      translatePage(currentLang);
 
-    // 3) Seleciona o toggle (bandeira)
-    const toggle = document.getElementById("lang-toggle");
-
-    // 4) Função que faz a troca
-    function translatePage(lang) {
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        const txt = translations[lang][key];
-        if (txt) el.innerText = txt;
+      // 6) Alterna en ↔ pt ao clicar
+      toggle.addEventListener("click", () => {
+        translatePage(currentLang === "en" ? "pt" : "en");
       });
-      // atualiza a imagem da bandeira
-      toggle.src = lang === "en"
-        ? "assets/images/flags/eua.png"
-        : "assets/images/flags/br.png";
-      localStorage.setItem("site-lang", lang);
-      currentLang = lang;
-    }
-
-    // 5) Aplica a tradução logo na carga
-    translatePage(currentLang);
-
-    // 6) Alterna en ↔ pt ao clicar
-    toggle.addEventListener("click", () => {
-      translatePage(currentLang === "en" ? "pt" : "en");
     });
-  });
-</script>
+  </script>
 
 
 
