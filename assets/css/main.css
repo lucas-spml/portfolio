@@ -1266,6 +1266,25 @@ ol {
 
 
 
+/*======================================
+	00. Lang Switcher
+========================================*/
+
+
+
+
+
+.lang-flag {
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.lang-flag:hover {
+  transform: scale(1.1);
+}
+
+
 
 
 
