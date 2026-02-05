@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt">
+
+<head>
+    <meta name="description" content="Olá, eu sou o Lucas! Product Designer há mais de 4 anos.">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Lucas Martins">
+    <meta name="keywords" content="ux/ui,designer,design,websites,desenvolvedor,tecnologia,software,TI">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Lucas Martins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="./assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+
+    <!-- Start Hero Area -->
+    <section class="wow fadeInLeft header-ten hero-area" data-wow-delay=".2s">
+        <div class="container">
+            <div class="row  justify-content-center text-center">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="hero-content">
+
+                        <div class="col-md-12 mb-4">
+                            <div class="footer-social-links pt-20">
+                                <ul class="footer-social-links">
+                                    <li>
+                                        <a href="./index.html" aria-label="Voltar para a página inicial"
+                                            title="Voltar para a página inicial">
+                                            <i class="lni lni-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h1 class="d-inline-flex align-items-center">
+                            <span data-i18n="hero.name">Página em desenvolvimento...👨🏻‍💻</span>
+
+                            <div class="dropdown ms-2">
+                                <button class="btn lang-dropdown dropdown-toggle" type="button" id="langDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="lang-pill">EN</span>
+                                </button>
+
+                                <ul class="dropdown-menu dropdown-menu-end lang-menu" aria-labelledby="langDropdown">
+                                    <li>
+                                        <button class="dropdown-item lang-option" type="button" data-lang="en">
+                                            EN
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="dropdown-item lang-option" type="button" data-lang="pt">
+                                            BR
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </h1>
+                        <div class="project-tags d-flex flex-wrap gap-2 mb-3 mt-2">
+                            <span class="badge">Web</span>
+                            <span class="badge">Mobile</span>
+                            <span class="badge">UX/UI</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+
+    <section class=" wow fadeInLeft project-section" data-wow-delay=".2s" id="selected-projects">
+
+        <!-- Start Project 1 -->
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <!-- MESMA LARGURA DAS OUTRAS SEÇÕES -->
+                <div class="col-lg-6 col-md-12 col-12">
+
+                    <div class="card-section mb-4 text-start">
+
+
+
+                        <div class="project-details">
+                            <p class="project-details small opacity-75" data-i18n="content.overview">
+                                Este projeto ainda está sendo documentado. Estou organizando o processo (problema,
+                                objetivos, soluções e resultados) para publicar um case completo em breve.
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Projects 1 -->
+
+    </section>
+
+    <!-- ========================= JS here ========================= -->
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const translations = {
+                en: {
+                    "hero.name": "Page in development… 👨🏻‍💻",
+                    "content.overview":
+                        "This project is still being documented. I’m organizing the story (problem, goals, solutions, and outcomes) to publish a complete case study soon."
+                },
+                pt: {
+                    "hero.name": "Página em desenvolvimento...👨🏻‍💻",
+                    "content.overview":
+                        "Este projeto ainda está sendo documentado. Estou organizando o processo (problema, objetivos, soluções e resultados) para publicar um case completo em breve."
+                }
+            };
+
+            let currentLang = localStorage.getItem("site-lang") || "en";
+
+            const pill = document.querySelector(".lang-pill");
+            const options = document.querySelectorAll(".lang-option");
+
+            function setPill(lang) {
+                pill.textContent = lang === "pt" ? "BR" : "EN";
+            }
+
+            function translatePage(lang) {
+                document.querySelectorAll("[data-i18n]").forEach(el => {
+                    const key = el.getAttribute("data-i18n");
+                    const txt = translations[lang]?.[key];
+                    if (txt) el.innerHTML = txt; // permite <strong> e <br>, se usar no futuro
+                });
+
+                localStorage.setItem("site-lang", lang);
+                currentLang = lang;
+                setPill(lang);
+            }
+
+            translatePage(currentLang);
+
+            options.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    translatePage(btn.getAttribute("data-lang"));
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+        //============== isotope masonry js with imagesloaded
+        imagesLoaded('#container', function () {
+            var elem = document.querySelector('.grid');
+            var iso = new Isotope(elem, {
+                // options
+                itemSelector: '.grid-item',
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid-item'
+                }
+            });
+
+            let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
+            filterButtons.forEach(e =>
+                e.addEventListener('click', () => {
+
+                    let filterValue = event.target.getAttribute('data-filter');
+                    iso.arrange({
+                        filter: filterValue
+                    });
+                })
+            );
+        });
+
+        //========= testimonial 
+        tns({
+            container: '.testimonial-active',
+            items: 1,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: false,
+            controlsText: ['<i class="lni lni-arrow-left"></i>', '<i class="lni lni-arrow-right"></i>'],
+        });
+    </script>
+
+    <script>
+        //========= testimonial 
+        tns({
+            container: '.testimonial-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            responsive: {
+                0: { items: 1 },
+                540: { items: 1 },
+                768: { items: 2 },
+                992: { items: 2 },
+                1170: { items: 3 }
+            }
+        });
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+
+        //========= glightbox
+        GLightbox({
+            'href': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+
+        //============== isotope masonry js with imagesloaded
+        imagesLoaded('#container', function () {
+            var elem = document.querySelector('.grid');
+            var iso = new Isotope(elem, {
+                // options
+                itemSelector: '.grid-item',
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid-item'
+                }
+            });
+
+            let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
+            filterButtons.forEach(e =>
+                e.addEventListener('click', () => {
+
+                    let filterValue = event.target.getAttribute('data-filter');
+                    iso.arrange({
+                        filter: filterValue
+                    });
+                })
+            );
+        });
+    </script>
+
+</body>
+
+</html>
