@@ -7,13 +7,13 @@
 
   var translations = {
     pt: {
-      bio: 'Entusiasta de vôlei, trilhas, filmes e viagens.',
+      bio: 'Vôlei, trilhas, filmes e viagens.',
       igAction: 'Seguir',
       ttAction: 'Seguir',
       ytAction: 'Inscrever-se'
     },
     en: {
-      bio: 'Volleyball, hiking, movies, and travel enthusiast.',
+      bio: 'Volleyball, hiking, movies, and travel.',
       igAction: 'Follow',
       ttAction: 'Follow',
       ytAction: 'Subscribe'
