@@ -10,15 +10,13 @@
       bio: 'Entusiasta de vôlei, séries, filmes e viagens.',
       igAction: 'Seguir',
       ttAction: 'Seguir',
-      ytAction: 'Inscrever-se',
-      ytStat: 'inscritos'
+      ytAction: 'Inscrever-se'
     },
     en: {
       bio: 'Volleyball, TV series, movies, and travel enthusiast.',
       igAction: 'Follow',
       ttAction: 'Follow',
-      ytAction: 'Subscribe',
-      ytStat: 'subscribers'
+      ytAction: 'Subscribe'
     }
   };
 
@@ -68,4 +66,7 @@
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') closeMenu();
   });
+
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
